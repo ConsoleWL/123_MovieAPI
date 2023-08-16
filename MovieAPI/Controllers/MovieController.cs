@@ -37,7 +37,7 @@ namespace MovieAPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateMovie([FromBody] Movie movie)
+        public IActionResult AddMovie([FromBody] Movie movie)
         {
             _context.Movies.Add(movie);
             _context.SaveChanges();
